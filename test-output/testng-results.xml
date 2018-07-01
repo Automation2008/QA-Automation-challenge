@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="run tests in single browser" duration-ms="38084" started-at="2018-07-01T14:03:38Z" finished-at="2018-07-01T14:04:16Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.ValtechTest.runners.RunCukesSingleBrowser@37574691]" name="Tests in Single Browser - feature - firefox v: ANY" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Tests in Single Browser" duration-ms="38084" started-at="2018-07-01T14:03:38Z" finished-at="2018-07-01T14:04:16Z">
+      <class name="com.ValtechTest.runners.RunCukesSingleBrowser">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.ValtechTest.runners.RunCukesSingleBrowser@37574691]" name="setUpClass" is-config="true" duration-ms="245" started-at="2018-07-01T15:03:38Z" finished-at="2018-07-01T15:03:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.ValtechTest.runners.RunCukesSingleBrowser@37574691]" name="Tests in Single Browser - feature - firefox v: ANY" duration-ms="37757" started-at="2018-07-01T15:03:38Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-01T15:04:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Purchasing and reviewing of order]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tests in Single Browser - feature - firefox v: ANY -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ValtechTest.runners.RunCukesSingleBrowser@37574691]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2018-07-01T15:04:16Z" finished-at="2018-07-01T15:04:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ValtechTest.runners.RunCukesSingleBrowser -->
+    </test> <!-- Tests in Single Browser -->
+  </suite> <!-- run tests in single browser -->
+</testng-results>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [run tests in single browser]">
+  <parameter name="scope" value="local"/>
+  <parameter name="browserName" value="firefox"/>
+  <listeners>
+    <listener class-name="com.ValtechTest.reporting.TestNGExecutionListener"/>
+    <listener class-name="com.ValtechTest.driver.LocalWebDriverListener"/>
+  </listeners>
+  <test name="Tests in Single Browser(failed)">
+    <parameter name="scope" value="local"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.ValtechTest.runners.RunCukesSingleBrowser">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.ValtechTest.runners.RunCukesSingleBrowser -->
+    </classes>
+  </test> <!-- Tests in Single Browser(failed) -->
+</suite> <!-- Failed suite [run tests in single browser] -->

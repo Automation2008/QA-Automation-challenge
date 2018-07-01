@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="run tests in single browser">
+    <listeners>
+   	   <listener class-name="com.ValtechTest.reporting.TestNGExecutionListener"></listener>
+        <!--
+        This TestNG listener takes care of setting up and tearing down the Local Selenium driver
+        -->
+        <listener class-name="com.ValtechTest.driver.LocalWebDriverListener" />
+    </listeners>
+     <!-- Please pass the value for browserName parameter and test will run accordingly- firefox,chrome,ie, safari and opera -->
+    <test name="Tests in Single Browser">
+        <parameter name="browserName" value="firefox" />
+        <parameter name="scope" value="local" />
+        <classes>
+            <class name="com.ValtechTest.runners.RunCukesSingleBrowser" />
+        </classes>
+    </test>
+</suite>

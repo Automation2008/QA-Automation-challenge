@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" name="Failed suite [run tests in parallel]" parallel="tests">
+  <parameter name="scope" value="local"/>
+  <parameter name="browserName" value="chrome"/>
+  <listeners>
+    <listener class-name="com.AccessToWorkStaffUI.reporting.TestNGExecutionListener"/>
+    <listener class-name="com.atwStaffUI.driver.LocalWebDriverListener"/>
+  </listeners>
+  <test name="Tests in FF(failed)" parallel="tests">
+    <parameter name="scope" value="local"/>
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.atwStaffUI.runners.RunCukesTestInFirefox">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.atwStaffUI.runners.RunCukesTestInFirefox -->
+      <class name="com.atwStaffUI.runners.RunCukesTestInChrome">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.atwStaffUI.runners.RunCukesTestInChrome -->
+    </classes>
+  </test> <!-- Tests in FF(failed) -->
+  <test name="Tests in Chrome(failed)" parallel="tests">
+    <parameter name="scope" value="local"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.atwStaffUI.runners.RunCukesTestInFirefox">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.atwStaffUI.runners.RunCukesTestInFirefox -->
+      <class name="com.atwStaffUI.runners.RunCukesTestInChrome">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.atwStaffUI.runners.RunCukesTestInChrome -->
+    </classes>
+  </test> <!-- Tests in Chrome(failed) -->
+</suite> <!-- Failed suite [run tests in parallel] -->

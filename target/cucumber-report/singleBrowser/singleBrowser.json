@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7420648365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHook()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Valtech test",
+        "description": "",
+        "id": "purchasing-and-reviewing-of-order;valtech-test",
+        "after": [
+          {
+            "result": {
+              "duration": 2274503215,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7586238255,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to Test Url \"https://www.valtech.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.valtech.com",
+                  "offset": 18
+                }
+              ],
+              "location": "CommonSteps.i_go_to_Test_Url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 299223818,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accept the cookie",
+            "match": {
+              "location": "LandingPgSteps.acceptCookie()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31990166,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify \"LATEST NEWS\" page is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LATEST NEWS",
+                  "offset": 10
+                }
+              ],
+              "location": "CommonSteps.i_verify_text_is_present(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 366459868,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on toggle button",
+            "match": {
+              "location": "LandingPgSteps.i_click_on_toggle_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1976682462,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click \"About\" page link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "About",
+                  "offset": 9
+                }
+              ],
+              "location": "CommonSteps.i_click_page_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73105016,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify \"About\" page is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "About",
+                  "offset": 10
+                }
+              ],
+              "location": "CommonSteps.i_verify_text_is_present(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 322976840,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on toggle button",
+            "match": {
+              "location": "LandingPgSteps.i_click_on_toggle_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3257734489,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click \"Services\" page link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Services",
+                  "offset": 9
+                }
+              ],
+              "location": "CommonSteps.i_click_page_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59118089,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"Services\" page is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Services",
+                  "offset": 10
+                }
+              ],
+              "location": "CommonSteps.i_verify_text_is_present(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275402389,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on toggle button",
+            "match": {
+              "location": "LandingPgSteps.i_click_on_toggle_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8890890973,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click \"Work\" page link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Work",
+                  "offset": 9
+                }
+              ],
+              "location": "CommonSteps.i_click_page_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97163756,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I verify \"Work\" page is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Work",
+                  "offset": 10
+                }
+              ],
+              "location": "CommonSteps.i_verify_text_is_present(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4421470669,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on valtech logo",
+            "match": {
+              "location": "CommonSteps.i_click_on_valtech_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298084511,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on contactUs toggle button",
+            "match": {
+              "location": "LandingPgSteps.click_contactUs_toggle_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52632395,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I find number of offices",
+            "match": {
+              "location": "LandingPgSteps.findNumOffices()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test1"
+          }
+        ]
+      }
+    ],
+    "name": "Purchasing and reviewing of order",
+    "description": "",
+    "id": "purchasing-and-reviewing-of-order",
+    "keyword": "Feature",
+    "uri": "ValtechTest.feature"
+  }
+]
